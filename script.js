@@ -28,16 +28,7 @@ document.querySelectorAll('.abstract').forEach(abs => {
   if (!btn || !btn.classList.contains('abstract-toggle')) return;
 
   function updateButtonVisibility() {
-    const isNarrow = matchMedia('(max-width: 1200px)').matches;
-
-    if (!isNarrow) {
-      // Wide screen: show full text, hide button
-      abs.classList.remove('expanded');
-      btn.classList.add('hidden');
-      return;
-    }
-
-    // Narrow screen: only show button if text is clamped
+    // Show the button only if abstract is actually longer than clamp
     if (abs.classList.contains('expanded')) {
       btn.classList.remove('hidden');
     } else {
@@ -53,8 +44,8 @@ document.querySelectorAll('.abstract').forEach(abs => {
   });
 
   updateButtonVisibility();
-  addEventListener('resize', updateButtonVisibility);
 });
+
 
 // === PUBLICATION LISTS ===
   function populateRefList(id, file, type) {
