@@ -1,0 +1,280 @@
+/* Base */
+:root{
+  --blue: #034694;       
+  --gold: #f4d03f;      
+  --ink:  #333;
+  --muted:#555;
+  --bg:   #f8f9fa;
+  --maxw: 1200px;
+  --nav-h: 58px;
+}
+
+*{ 
+  box-sizing: border-box; 
+}
+ 
+html {
+  height: 100%;
+  scroll-padding-top: calc(var(--nav-h) + env(safe-area-inset-top) + 8px);
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", sans-serif;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--bg);
+  height: 100%;
+  padding-top: calc(var(--nav-h) + env(safe-area-inset-top) + 1px);
+}
+
+/* Shared container width */
+.container {
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: clamp(16px, 3vw, 28px);
+}
+ 
+
+
+/* Header */
+header {
+  background: #fff;
+  border-bottom: 1px solid #e7e7e7;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding-top: env(safe-area-inset-top);
+}
+nav {
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 58px;
+}
+.logo {
+  font-size: 1.25rem; font-weight: 800; color: var(--blue); letter-spacing: .2px; 
+}
+.logo a{
+  font-size: 1.25rem; font-weight: 800; color: var(--blue); text-decoration: none; letter-spacing: .2px; 
+}
+.nav-links {
+  display: flex; gap: 18px; list-style: none; margin: 0; padding: 0;
+}
+.nav-links a {
+  color: var(--ink); text-decoration: none; font-weight: 500;
+  padding: 6px 8px; border-radius: 8px; transition: color .2s ease, background .2s ease;
+}
+.nav-links a:hover { color: var(--blue); background: rgba(3,70,148,.08); }
+
+
+ 
+
+
+
+
+
+/* Sections */
+.section { padding: clamp(44px, 7vw, 80px) 0; }
+.section h2 {
+  color: var(--blue); margin: 0 0 .6rem; font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2rem);
+}
+
+/* Intro */
+.intro .intro-wrap { display: grid; grid-template-columns: 200px 1fr; gap: 28px; align-items: start; padding: clamp(28px, 4vw, 40px);}
+.profile-pic{
+  width: 200px; height: 240px; border-radius: 12px; object-fit: cover;
+  /*border: 4px solid var(--gold);*/
+  box-shadow: 0 8px 22px rgba(0,0,0,.08);
+}
+.intro-text { max-width: 800px; }
+.intro-inline a { text-decoration: none; color: var(--blue); }
+.intro-inline a:hover { text-decoration: underline; color: var(--blue); }
+.contact-inline { margin-top: .6rem; color: var(--muted); }
+.contact-inline a { color: var(--blue); text-decoration: none; }
+.contact-inline a:hover { text-decoration: underline; }
+
+/* Research */
+.gradient-bg{
+  background:
+    radial-gradient(700px 300px at 15% -10%, rgba(244,208,63,.18), transparent 50%),
+    radial-gradient(700px 300px at 90% 110%, rgba(3,70,148,.14), transparent 50%);
+  border-radius: 14px;
+  padding: clamp(28px, 4vw, 40px);
+}
+.res-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.res-list li{
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.04);
+}
+
+
+
+/* Default (wide screens): image left, text right, flexible image column */
+.res-item {
+  display: grid;
+  grid-template-columns: clamp(120px, 22vw, 240px) 1fr; /* fluid 120–240px */
+  gap: 16px;
+  align-items: center;
+  padding: 14px;
+}
+
+/* Thumbnail: 4:3, centered in its column */
+.res-img {
+  aspect-ratio: 4 / 3;     /* keep 4:3 */
+  width: 100%;             /* fill its flexible column */
+  max-width: 100%;
+  object-fit: contain;     /* or 'cover' if you prefer cropping */
+  justify-self: center;    /* center within the column */
+  border-radius: 8px;
+  border: 2px solid #e1e1e1;
+}
+
+/* Text column behaves nicely when space gets tight */
+.res-text { min-width: 0; }
+
+.res-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+
+  display: inline;        /* stay inline with text */*/
+  /*white-space: nowrap;    /* keep in one line */*/
+  margin-right: 6px;      /* small gap between title and body */
+}
+
+
+/* Default (wide screens >=1200px): full abstracts, no button */
+.abstract { display: inline; }
+.abstract-toggle { display: none; }
+
+/* Portable devices (<1200px): clamp abstract & show button */
+@media (max-width: 1200px) {
+  .abstract {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;   /* show ~first 3 lines */
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+  }
+  .abstract::after { content: " …"; }
+
+  .abstract.expanded {
+    display: block;
+    -webkit-line-clamp: unset;
+  }
+  .abstract.expanded::after { content: ""; }
+
+  .abstract-toggle {
+    display: block;
+    background: none;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    color: var(--blue);
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0;
+  }
+  .abstract-toggle.hidden { display: none; }
+  .abstract-toggle:hover {
+    color: var(--blue);       /* hover color */
+    text-decoration: underline;
+  }
+}
+
+
+.res-text a {
+  text-decoration: none;
+  color: #034694;
+}
+
+.res-text a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Citation formatting (IEEE) */
+.IEEE-cite {
+  margin: 0;
+  line-height: 1.55;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+
+
+/* Publications */
+.plain-bg{
+  border-radius: 14px;
+  padding: clamp(28px, 4vw, 40px);
+}
+
+
+.ref-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.ref-list li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.ref-list a {
+  text-decoration: none;
+  color: #034694;
+}
+
+.ref-list a:hover {
+  text-decoration: underline;
+}
+
+
+ 
+/* Experiences */
+.exp-list{ list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.exp-list li{
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid var(--blue);
+  border-radius: 10px;
+  padding: 12px 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.04);
+}
+
+.exp-list2{ list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.exp-list2 li{
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid var(--gold);
+  border-radius: 10px;
+  padding: 12px 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.04);
+}
+
+/* Footer — blends with background, no top border line */
+footer{
+  background: var(--bg);
+  color: #666;
+  padding: 22px 0;
+}
+.foot-inner{
+  display: flex; align-items: center; justify-content: center;
+}
+footer small{ font-size: .9rem; }
+
+/* Responsive tweaks */
+@media (max-width: 600px){
+  .res-item {
+    grid-template-columns: 1fr; /* stack image above text */
+  }
+  .res-img {
+    max-width: 60%;
+  }
+  .intro .intro-wrap { grid-template-columns: 1fr; }
+  .profile-pic { width: 160px; height: 160px; }
+}

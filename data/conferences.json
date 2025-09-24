@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ESQMAC_c",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "Communication Efficiency of Summation over a Quantum Erasure MAC with Replicated Inputs",
+    "conference": "IEEE International Conference on Communication (ICC) 2024",
+    "month": "Jun.",
+    "year": "2024",
+    "place": "Denver, CO, USA",
+    "doi": "10.1109/ICC51166.2024.10622555",
+    "link": "https://ieeexplore.ieee.org/document/10622555"
+  },
+  {
+    "id": "SQMAC_c",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "The Capacity of Classical Summation over a Quantum MAC with Arbitrarily Replicated Inputs",
+    "conference": "2023 IEEE Global Communications Conference (GLOBECOM)",
+    "month": "Dec.",
+    "year": "2023",
+    "place": "Kuala Lumpur, Malaysia",
+    "doi": "10.1109/GLOBECOM54140.2023.10437242",
+    "link": "https://ieeexplore.ieee.org/document/10437242"
+  },
+  {
+    "id": "NsumBox_c",
+    "authors": "Matteo Allaix, Yuxiang Lu, Yuhang Yao, Tefjol Pllaha, Camilla Hollanti, Syed A. Jafar",
+    "title": "N-Sum Box: An Abstraction for Linear Computation over Many-to-One Quantum Networks",
+    "conference": "2023 IEEE Global Communications Conference (GLOBECOM)",
+    "month": "Dec.",
+    "year": "2023",
+    "place": "Kuala Lumpur, Malaysia",
+    "doi": "10.1109/GLOBECOM54140.2023.10437170",
+    "link": "https://ieeexplore.ieee.org/document/10437170"
+  },
+  {
+    "id": "StarPIR_c",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "The Capacity of 4-Star-Graph PIR",
+    "conference": "2023 IEEE International Symposium on Information Theory (ISIT)",
+    "month": "Jun.",
+    "year": "2023",
+    "place": "Taipei, Taiwan",
+    "doi": "10.1109/ISIT54713.2023.10206729",
+    "link": "https://ieeexplore.ieee.org/document/10206729"
+  },
+  {
+    "id": "KLCBC_c",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "The Generic Capacity of K User Symmetric Linear Computation Broadcast",
+    "conference": "IEEE International Conference on Communication (ICC) 2023",
+    "month": "May.",
+    "year": "2023",
+    "place": "Rome, Italy",
+    "doi": "10.1109/ICC45041.2023.10278932",
+    "link": "https://ieeexplore.ieee.org/document/10278932"
+  },
+  {
+    "id": "3LCBC_c",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "Capacity of 3-User Linear Computation Broadcast over Fq with 1D Demand and Side-Information",
+    "conference": "2022 IEEE International Symposium on Information Theory (ISIT)",
+    "month": "Jun.",
+    "year": "2022",
+    "place": "Espoo, Finland",
+    "doi": "10.1109/ISIT50566.2022.9834733",
+    "link": "https://ieeexplore.ieee.org/document/9834733"
+  },
+  {
+    "id": "caching",
+    "authors": "Yuhang Yao and Jinbei Zhang",
+    "title": "Interplay of cache sizes and file popularity in coded caching",
+    "conference": "2019 IEEE Global Communications Conference (GLOBECOM)",
+    "month": "Dec.",
+    "year": "2019",
+    "place": "Waikoloa, HI, USA",
+    "doi": "10.1109/GLOBECOM38437.2019.9014279",
+    "link": "https://ieeexplore.ieee.org/document/9014279"
+  }
+]

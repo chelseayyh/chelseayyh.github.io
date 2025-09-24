@@ -1,0 +1,97 @@
+[
+  {
+    "id": "JCIT",
+    "type": "early_access",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "On the Utility of Quantum Entanglement for Joint Communication and Instantaneous Detection",
+    "journal": "IEEE Trans. Commun. (Early Access)",
+    "year": "2025",
+    "doi": "10.1109/TCOMM.2025.3573393",
+    "link": "https://ieeexplore.ieee.org/document/11015450"
+  },
+  {
+    "id": "ESQMAC",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "Capacity of Summation Over a Symmetric Quantum Erasure MAC With Partially Replicated Inputs",
+    "journal": "IEEE Trans. Inf. Theory",
+    "volume": "71",
+    "number": "7",
+    "pages": " 5371-5386",
+    "year": "2025",
+    "doi": "10.1109/TIT.2025.3570229",
+    "link": "https://ieeexplore.ieee.org/document/11004055"
+  },
+  {
+    "id": "NsumBox",
+    "authors": "Matteo Allaix, Yuxiang Lu, Yuhang Yao, Tefjol Pllaha, Camilla Hollanti, Syed Jafar",
+    "title": "N-Sum Box: An Abstraction for Linear Computation Over Many-to-One Quantum Networks",
+    "journal": "IEEE Trans. Inf. Theory",
+    "volume": "71",
+    "number": "2",
+    "pages": "1121-1139",
+    "year": "2025",
+    "doi": "10.1109/TIT.2024.3514921",
+    "link": "https://ieeexplore.ieee.org/document/10789218"
+  },
+  {
+    "id": "SQMAC",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "The Capacity of Classical Summation Over a Quantum MAC With Arbitrarily Distributed Inputs and Entanglements",
+    "journal": "IEEE Trans. Inf. Theory",
+    "volume": "70",
+    "number": "9",
+    "pages": "6350-6370",
+    "year": "2024",
+    "doi": "10.1109/TIT.2024.3397917",
+    "link": "https://ieeexplore.ieee.org/document/10521629"
+  },
+  {
+    "id": "3LCBC",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "The Capacity of 3 User Linear Computation Broadcast",
+    "journal": "IEEE Trans. Inf. Theory",
+    "volume": "70",
+    "number": "6",
+    "pages": "4414-4438",
+    "year": "2024",
+    "doi": "10.1109/TIT.2024.3392685",
+    "link": "https://ieeexplore.ieee.org/document/10507008"
+  },
+  {
+    "id": "KLCBC",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "On the Generic Capacity of K-User Symmetric Linear Computation Broadcast",
+    "journal": "IEEE Trans. Inf. Theory",
+    "volume": "70",
+    "number": "5",
+    "pages": "3693-3717",
+    "year": "2024",
+    "doi": "10.1109/TIT.2024.3382257",
+    "link": "https://ieeexplore.ieee.org/document/10480731"
+  },
+  {
+    "id": "Secure_KPCL",
+    "authors": "Yuxiang Lu, Yuhang Yao, Syed A. Jafar",
+    "title": "On the Capacity of Secure K-User Product Computation Over a Quantum MAC",
+    "journal": "IEEE Commun. Lett.",
+    "volume": "27",
+    "number": "10",
+    "pages": "2598-2602",
+    "year": "2023",
+    "doi": "10.1109/LCOMM.2023.3311368",
+    "link": "https://ieeexplore.ieee.org/abstract/document/9815586"
+  },
+  {
+    "id": "2LCBC",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "Capacity of 2-user linear computation broadcast with partially informed server",
+    "journal": "IEEE Commun. Lett.",
+    "volume": "26",
+    "number": "9",
+    "pages": "2014-2017",
+    "year": "2022",
+    "doi": "10.1109/LCOMM.2022.3188948",
+    "link": "https://ieeexplore.ieee.org/abstract/document/9815586"
+  }
+
+]

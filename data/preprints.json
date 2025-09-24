@@ -1,0 +1,26 @@
+[
+  {
+    "id": "NSCSITTP",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "Virtual Teleportation of CSIT via Non-Signaling Assistance",
+    "preprint": "arXiv:2506.17803",
+    "year": "2025",
+    "link": "https://arxiv.org/abs/2506.17803"
+  },
+  {
+    "id": "NSBC",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "Can Non-Signaling Assistance Increase the Degrees of Freedom of a Wireless Network?",
+    "preprint": "arXiv:2503.08597",
+    "year": "2025",
+    "link": "https://arxiv.org/abs/2503.08597"
+  },
+  {
+    "id": "CQLCMAC",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "The Inverted 3-Sum Box: General Formulation and Quantum Information Theoretic Optimality",
+    "preprint": "arXiv:2407.01498",
+    "year": "2025",
+    "link": "https://arxiv.org/abs/2407.01498"
+  }
+]
