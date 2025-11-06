@@ -1,5 +1,16 @@
 [
   {
+    "id": "NSBC_c",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "Can Non-Signaling Assistance Increase the Degrees of Freedom of a Wireless Network?",
+    "conference": "2025 IEEE International Symposium on Information Theory (ISIT)",
+    "month": "Jun.",
+    "year": "2025",
+    "place": "Ann Arbor, MI, USA",
+    "doi": "10.1109/ISIT63088.2025.11195469",
+    "link": "https://ieeexplore.ieee.org/document/11195469"
+  },
+  {
     "id": "ESQMAC_c",
     "authors": "Yuhang Yao and Syed A. Jafar",
     "title": "Communication Efficiency of Summation over a Quantum Erasure MAC with Replicated Inputs",
