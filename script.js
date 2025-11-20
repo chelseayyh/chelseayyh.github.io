@@ -59,16 +59,21 @@ document.querySelectorAll('.abstract').forEach(abs => {
 
         if (type === "preprint") {
           prefix = ``;
-          entry = `${prefix} ${ref.authors}, “<a href="${ref.link}" target="_blank">${ref.title}</a>,” ${ref.preprint}</i>.`;
+          entry = `${prefix} ${ref.authors}, “<a href="${ref.link}" target="_blank">${ref.title}</a>,” <i>${ref.preprint}</i>.`; 
         } 
         else if (type === "journal") {
           prefix = `[J${refs.length-i}]`;
-          if (ref.type === "early_access"){
-            entry = `${prefix} ${ref.authors}, “<a href="${ref.link}" target="_blank">${ref.title}</a>,” <i>${ref.journal}</i>, ${ref.year}, DOI:${ref.doi}.`;
-          }
-          else {
-            entry = `${prefix} ${ref.authors}, “<a href="${ref.link}" target="_blank">${ref.title}</a>,” <i>${ref.journal}</i>, vol. ${ref.volume}, no. ${ref.number}, pp. ${ref.pages}, ${ref.year}, DOI:${ref.doi}.`;
-          }
+          entry = `${prefix} ${ref.authors}, “<a href="${ref.link}" target="_blank">${ref.title}</a>,” `;
+          const parts = [
+            ref.journal && `<i>${ref.journal}</i>`,
+            ref.volume && `vol. ${ref.volume}`,
+            ref.number && `no. ${ref.number}`,
+            ref.pages && `pp. ${ref.pages}`,
+            ref.year && `${ref.year}`,
+            ref.doi && `DOI:${ref.doi}`
+          ].filter(Boolean);  // remove null/undefined/false
+
+          entry += parts.join(", ") + ".";
         } 
         else if (type === "conference") {
           prefix = `[C${refs.length-i}]`;

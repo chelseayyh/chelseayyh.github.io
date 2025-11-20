@@ -1,20 +1,23 @@
 [
   {
     "id": "CQMAC",
-    "type": "early_access",
     "authors": "Yuhang Yao and Syed A. Jafar",
     "title": "On the Capacity of Vector Linear Computation over a Noiseless Quantum Multiple Access Channel with Entangled Transmitters",
-    "journal": "IEEE Trans. Quantum Eng. (Early Access)",
+    "journal": "IEEE Trans. Quantum Eng.",
+    "volume": "6",
     "year": "2025",
+    "pages": "1-20",
     "doi": "10.1109/TQE.2025.3620628",
     "link": "https://ieeexplore.ieee.org/document/11202274"
   },
   {
     "id": "JCIT",
-    "type": "early_access",
     "authors": "Yuhang Yao and Syed A. Jafar",
     "title": "On the Utility of Quantum Entanglement for Joint Communication and Instantaneous Detection",
-    "journal": "IEEE Trans. Commun. (Early Access)",
+    "journal": "IEEE Trans. Commun.",
+    "volume": "73",
+    "number": "11",
+    "pages": "11722-11735",
     "year": "2025",
     "doi": "10.1109/TCOMM.2025.3573393",
     "link": "https://ieeexplore.ieee.org/document/11015450"
