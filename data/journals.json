@@ -1,5 +1,14 @@
 [
   {
+    "id": "NSBC",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "Can Non-Signaling Assistance Increase the Degrees of Freedom of a Wireless Network?",
+    "journal": "IEEE Trans. Inf. Theory (Early Access)",
+    "year": "2025",
+    "doi": "10.1109/TIT.2025.3645201",
+    "link": "https://ieeexplore.ieee.org/document/11303328"
+  },
+  {
     "id": "CQMAC",
     "authors": "Yuhang Yao and Syed A. Jafar",
     "title": "On the Capacity of Vector Linear Computation over a Noiseless Quantum Multiple Access Channel with Entangled Transmitters",
