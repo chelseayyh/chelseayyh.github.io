@@ -1,5 +1,29 @@
 [
   {
+    "id": "QEACWS",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "Quantum Entanglement Assistance Improves the Capacity and Activates the Zero-Error Capacity of Classical Channels with Causal CSIT",
+    "preprint": "arXiv:2603.20416",
+    "year": "2026",
+    "link": "https://arxiv.org/abs/2603.20416"
+  },
+  {
+    "id": "EACC",
+    "authors": "Yuhang Yao, Tushita Prasad, Markus Grassl, Syed Jafar, Hua Sun",
+    "title": "Space-sharing and Singleton Bounds for Entanglement-assisted Classical Coding",
+    "preprint": "arXiv:2603.08563",
+    "year": "2026",
+    "link": "https://arxiv.org/abs/2603.08563"
+  },
+  {
+    "id": "NSCWS",
+    "authors": "Yuhang Yao and Syed A. Jafar",
+    "title": "Non-signaling Assisted Capacity of a Classical Channel with Causal CSIT",
+    "preprint": "arXiv:2602.11568",
+    "year": "2026",
+    "link": "https://arxiv.org/abs/2602.11568"
+  },
+  {
     "id": "NSCSITTP",
     "authors": "Yuhang Yao and Syed A. Jafar",
     "title": "Virtual Teleportation of CSIT via Non-Signaling Assistance",
